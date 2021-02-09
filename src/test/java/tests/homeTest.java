@@ -10,18 +10,18 @@ public class homeTest extends Base {
 
 
     @Test
-    public void accessHomePage(){
+    public void accessHomePage() {
 
         loadPage(PropertyLoader.loadProperty("url"));
         Assert.assertTrue(isPresent(Locators.logo));
-        tearDown();
+
     }
 
     @Test
-    public void verifyTopBreadcrum(){
+    public void verifyTopBreadcrum() {
         loadPage(PropertyLoader.loadProperty("url"));
         Assert.assertTrue(isPresent(Locators.breadcrum_container));
-        tearDown();
+
     }
 
 
