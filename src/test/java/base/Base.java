@@ -99,7 +99,7 @@ public class Base extends Driver {
         List<WebElement> elementList = null;
         Exception exception = null;
         try {
-            elementList = new WebDriverWait(driver, options.timeoutSeconds).until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+            elementList = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
 
         } catch (Exception e) {
             exception = e;
