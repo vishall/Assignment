@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import utils.PropertyLoader;
 
+// this is a test class which has all the tests
 public class homeTest extends Base {
 
 

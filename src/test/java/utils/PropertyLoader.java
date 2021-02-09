@@ -3,9 +3,9 @@ package utils;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- * Class that extracts properties from the prop file.
- */
+
+//Class that extracts properties from the prop file.
+
 public class PropertyLoader {
 
     private static final String PROP_FILE = "/config.properties";

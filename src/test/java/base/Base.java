@@ -11,7 +11,7 @@ import utils.Driver;
 import java.time.Duration;
 import java.util.List;
 
-
+//this class should have all the methods which can be used frequently
 public class Base extends Driver {
 
 

@@ -3,6 +3,7 @@ package builders;
 import utils.Conditions;
 import utils.Driver;
 
+//this class have a method which can be used while interacting on the page
 public class WFBuilder {
     public boolean scrollTo;
     public Conditions conditions;
