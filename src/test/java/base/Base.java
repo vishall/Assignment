@@ -22,6 +22,7 @@ public class Base extends Driver {
 
     public void loadPage(String url)
     {
+        setDriver(driver);
         driver.get(url);
     }
 

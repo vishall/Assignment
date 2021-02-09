@@ -11,7 +11,7 @@ public class homeTest extends Base {
 
     @Test
     public void accessHomePage(){
-        setDriver(driver);
+
         loadPage(PropertyLoader.loadProperty("url"));
         Assert.assertTrue(isPresent(Locators.logo));
         tearDown();
