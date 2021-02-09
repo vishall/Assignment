@@ -2,14 +2,13 @@ package base;
 
 import builders.WFBuilder;
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Driver;
-
+import java.time.Duration;
 import java.util.List;
 
 
@@ -61,11 +60,11 @@ public class Base extends Driver {
         try {
             switch (options.conditions) {
                 case CLICKABLE:
-                    element = new WebDriverWait(driver, options.timeoutSeconds, 1000).until(ExpectedConditions.elementToBeClickable(
+                    element = new WebDriverWait(driver, Duration.ofSeconds(1000)).until(ExpectedConditions.elementToBeClickable(
                             (locator)));
                     break;
                 case PRESENT:
-                    element = new WebDriverWait(driver, options.timeoutSeconds, 1000).until(ExpectedConditions
+                    element = new WebDriverWait(driver, Duration.ofSeconds(1000)).until(ExpectedConditions
                             .presenceOfElementLocated((locator)));
                     break;
             }
