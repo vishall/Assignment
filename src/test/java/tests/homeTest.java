@@ -17,5 +17,12 @@ public class homeTest extends Base {
         tearDown();
     }
 
+    @Test
+    public void verifyTopBreadcrum(){
+        loadPage(PropertyLoader.loadProperty("url"));
+        Assert.assertTrue(isPresent(Locators.breadcrum_container));
+        tearDown();
+    }
+
 
 }
