@@ -12,7 +12,7 @@ repositories {
 dependencies {
 
 
-
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
     compile group: 'io.cucumber', name: 'cucumber-junit', version: '6.9.1'
     compile group: 'io.cucumber', name: 'cucumber-java', version: '6.9.1'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-7'

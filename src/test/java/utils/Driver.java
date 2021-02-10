@@ -9,18 +9,18 @@ public class Driver {
 
 
     public static long defaultTimeout = 15;
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public void setDriver() {
 
 
         if (PropertyLoader.loadProperty("browser").equalsIgnoreCase(String.valueOf(Browsers.chrome))) {
             System.setProperty("webdriver.chrome.driver", "Executables/chromedriverMACOS");
-            this.driver = new ChromeDriver();
+            driver = new ChromeDriver();
 
         } else if (PropertyLoader.loadProperty("browser").equalsIgnoreCase(String.valueOf(Browsers.firefox))) {
             System.setProperty("webdriver.gecko.driver", "Executables/geckodriver");
-            this.driver = new FirefoxDriver();
+            driver = new FirefoxDriver();
         }
     }
 
